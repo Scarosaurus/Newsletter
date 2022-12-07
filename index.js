@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html")
 })
-/*
+
 app.post("/", function (req, res) {
   const firstName = req.body.firstName
   const lastName = req.body.lastName
@@ -61,7 +61,7 @@ app.post("/", function (req, res) {
 app.post("/failure", function (req, res) {
   res.redirect("/")
 })
-*/
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running on port 300");  
 })
