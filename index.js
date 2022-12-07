@@ -44,7 +44,7 @@ app.post("/", function (req, res) {
     auth: "scarosaurus:" + apiKey
   }
 
-  const request = https.request(url, options, function (response) 
+  const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html")
     } else {
